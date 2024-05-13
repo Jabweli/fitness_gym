@@ -1,0 +1,286 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-h {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+
+.the-best-ad {
+    margin-top: 4rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.the-best-ad > span {
+    z-index: 2;
+    letter-spacing: 1.5px;
+}
+
+.the-best-ad > div {
+    position: absolute;
+    background-color: var(--orange);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.9rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+    /* letter-spacing: 10px; */
+    /* font-family: Rubik; */
+}
+
+.stroke-text {
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.hero-text > div:nth-of-type(3){
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+.figures {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-transform: uppercase;
+}
+
+.figures > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.figures > div > span:nth-of-type(1){
+    font-size: 2rem;
+    color: white;
+}
+
+.figures > div > span:nth-of-type(2){
+    color: var(--gray);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+}
+
+.hero-buttons>:nth-child(1){
+    background-color: var(--orange);
+    color: white;
+    width: 8rem;
+}
+
+.hero-buttons>:nth-child(2){
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid var(--orange);
+    color: white;
+}
+
+
+
+/* right side styling */
+.right-h {
+    flex: 1;
+    position: relative;
+    background-color: var(--orange);
+}
+.right-h>.btn {
+    position: absolute;
+    right: 3rem; top: 2rem;
+    color: black;
+}
+
+.heart-rate {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    background-color: var(--darkGrey);
+    width: fit-content;
+    align-items: flex-start;
+    border-radius: 5px;
+    position: absolute;
+    right: 4rem; top: 7rem;
+    padding: 1rem 1.2rem;
+}
+
+.heart-rate > span:nth-of-type(1){
+    color: var(--gray);
+}
+
+.heart-rate > span:nth-of-type(2){
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.hero-img {
+    position: absolute;
+    width: 23rem;
+    top: 10rem;
+    right: 8rem;
+}
+
+.hero-back-img {
+    position: absolute;
+    top: 4rem;
+    right: 20rem;
+    z-index: -1;
+    width: 15rem;
+}
+
+
+/* calories div */
+.calories {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    position: absolute;
+    top: 35rem;
+    right: 28rem;
+}
+
+.calories > img {
+    width: 3rem;
+    flex: 1;
+}
+
+.calories > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 7rem;
+}
+
+.calories > div > :nth-of-type(1){
+    color: var(--gray);
+}
+
+.calories > div > :nth-of-type(2){
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.hero-blur {
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-blur{
+        width: 14rem;
+    }
+
+    .the-best-ad {
+        margin-top: 0rem;
+        /* transform: scale(0.8); */
+        font-size: small;
+        align-self: center;
+    }
+    .hero-text {
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-text > div:nth-of-type(3){
+        font-size: small;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    .figures {
+        justify-content: center;
+    }
+    .figures > div > span:nth-of-type(1){
+        font-size: large;
+    }
+
+    .figures > div > span:nth-of-type(2){
+       font-size: small;
+    }
+
+    .right-h {
+        position: relative;
+        background: none;
+    }
+
+    .heart-rate {
+        left: 1rem;
+        top: 2rem;
+    }
+
+    .calories {
+        position: relative;
+        top: 5rem;
+        left: 2rem;
+    }
+
+    .heart-rate > span:nth-of-type(2){
+        font-size: 1rem;
+    }
+
+    .hero-img{
+        position: relative;
+        width: 15rem;
+        left: 7rem;
+        top: 4rem;
+        align-self: center;
+    }
+
+    .hero-back-img{
+        width: 15rem;
+        left: 2rem;
+        top: 0rem;
+    }
+
+    .hero-buttons{
+        justify-content: center;
+    }
+    
+}

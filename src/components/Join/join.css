@@ -1,0 +1,104 @@
+.join {
+    display: flex;
+    padding: 0 2rem;
+    gap: 10rem;
+}
+
+.left-j {
+    position: relative;
+}
+
+.left-j > div {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.left-j > hr{
+    position: absolute;
+    width: 10.5rem;
+    border: 2px solid var(--orange);
+    border-radius: 20%;
+    margin-top: -10px;
+}
+
+.right-j {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.right-j > form {
+    display: flex;
+    gap: 3rem;
+    background-color: var(--gray);
+    padding: 1rem 2rem;
+}
+
+.right-j > form > input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgray);
+}
+
+::placeholder{
+    color: var(--lightgray);
+}
+
+.btn-j {
+    background-color: var(--orange);
+    color: white;
+}
+
+
+@media screen and (min-width: 1440px) {
+    .join {
+        width: 1250px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .join {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .right-j {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    .left-j > div {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 424px){
+    .join {
+        padding: 0 1rem;
+    }
+
+    .right-j > form {
+        display: flex;
+        gap: 2rem;
+        background-color: var(--gray);
+        padding: 1rem 1rem;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .btn-j {
+        background-color: var(--orange);
+        color: white;
+        display: block;
+    }
+}
